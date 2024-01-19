@@ -1,4 +1,6 @@
-﻿namespace MauiAppCenter3;
+﻿using Microsoft.AppCenter.Analytics;
+
+namespace MauiAppCenter3;
 
 public partial class MainPage : ContentPage
 {
@@ -18,7 +20,9 @@ public partial class MainPage : ContentPage
 		else
 			CounterBtn.Text = $"Clicked {count} times";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+        Analytics.TrackEvent("MauiAppCenter 3 Counter Clicked", new Dictionary<string, string> { { "count", count.ToString() } });
+
+        SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
 
