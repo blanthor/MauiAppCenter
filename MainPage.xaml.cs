@@ -20,7 +20,7 @@ public partial class MainPage : ContentPage
 		else
 			CounterBtn.Text = $"Clicked {count} times";
 
-        Analytics.TrackEvent("MauiAppCenter 3 Counter Clicked", new Dictionary<string, string> { { "count", count.ToString() } });
+        Analytics.TrackEvent("MauiAppCenter 3 (.net8) Counter Clicked", new Dictionary<string, string> { { "count", count.ToString() } });
 
         SemanticScreenReader.Announce(CounterBtn.Text);
 	}
