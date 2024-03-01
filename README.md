@@ -5,7 +5,12 @@ MauiAppInsights is a .NET MAUI App, written in .NET 8 taking the standard templa
 https://vladislavantonyuk.github.io/articles/Adding-Application-Insights-to-.NET-MAUI-Application/
 https://learn.microsoft.com/en-us/azure/azure-monitor/app/worker-service 
 
-## Mobile App (MauiAppInsights)
+## Mobile App (MauiAppCenter)
+This is based on the Visual Studio .NET MAUI standard template with the code-behind pattern. It is a simple app with a 
+button that logs an event to Azure Application Insights.
+
+
+## Mobile App (MauiAppCtrAppInsightsMvvm)
 This is based on the Visual Studio .NET MAUI modified to us the MVVM pattern.
 
 # Getting Started
@@ -39,12 +44,26 @@ This is based on the Visual Studio .NET MAUI modified to us the MVVM pattern.
  - Select the Application Insights instance 
  - Select **Transaction search**
  - Click on the **See all data in the last 24 hours** button. After a delay all of the events logged in the mobile app will appear in the list.
+
+### App Center
+ - Navigate to the App Center
+ - Select the App
+ - For Crashes
+   - Select **Diagnostics**
+   - Select **Issues**
+   - Select the **Crashes** Tab
+ - For Event Logging (optional)
+   - Select **Analytics**
+   - Select **Events**
+   - Select **TrackEvent** for any Events you may have logged.
+   - Select **TrackException** for any Exception you may have logged.
+ - After a delay all of the events logged in the mobile app will appear in the list.
     
 # Build Strategy
 - Clean the solution before initiating a build/re-build.
 - Few checks to be done to mitigate common build issues:
     - Make sure only Android target is enabled for the solution. It can be checked here Solution -> Properties -> Application
-    - Android Targets
+    - Android Targets (other targets may be used depending on your configuration)
         - Target Android Framework  as Android 13.0 (API Level 33)
         - Minimum Target Android Framework as Android 11.0 (API Level 30)
  
