@@ -22,6 +22,9 @@ namespace MauiAppInsights
                 .RegisterAppServices()
                 .RegisterViewModels()
                 .RegisterViews();
+            // NOTE: Guidance to use AppCenter SDK only for crash reporting and analytics. This line is added to start AppCenter SDK.
+            // For more information, visit: https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/maui
+            // Regular logging will be done using Application Insights SDK.
             AppCenter.Start("windowsdesktop=05ecf696-6e84-41cf-8fac-b82bb435d0cc;" +
                 "android=634ca2d1-71bb-42d7-8971-f6cb61422ef5;" +
                 "ios={Your iOS App secret here};" +

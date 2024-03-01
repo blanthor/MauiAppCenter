@@ -4,6 +4,10 @@ using Microsoft.Extensions.Logging;
 
 namespace MauiAppInsights
 {
+    /// <summary>
+    /// MyService class to demonstrate logging and tracking events and exceptions
+    /// at the service level.
+    /// </summary>
     public class MyService : IMyService
     {
         private readonly ILogger<MyService> _logger;
@@ -22,7 +26,7 @@ namespace MauiAppInsights
         public void TrackEvent(string eventText)
         {
             _logger.LogInformation("TrackEvent executed with parameter: {EventText}", eventText);
-            Analytics.TrackEvent("TrackEvent", new Dictionary<string, string> { { "EventText", eventText } });
+            Analytics.TrackEvent("TrackEvent", new Dictionary<string, string> { { "EventText", eventText } }); // TrackEvent as an event is optional per guidance.
         }
 
         internal void TrackException(string v)
@@ -36,7 +40,7 @@ namespace MauiAppInsights
             catch (Exception ex)
             {
                 _logger.LogError("TrackException executed with parameter: {EventText}", v);
-                Analytics.TrackEvent("TrackException", new Dictionary<string, string> { { "Exception", ex.Message } });
+                Analytics.TrackEvent("TrackException", new Dictionary<string, string> { { "Exception", ex.Message } }); // TrackException as an event is optional per guidance.
                 Crashes.TrackError(ex);
             }
         }
