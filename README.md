@@ -1,9 +1,12 @@
 # Introduction 
-MauiAppInsights is a .NET MAUI App, written in .NET 8 taking the standard template, modifying it with the MVVM Pattern, and logging to Azure Application Insights.
+MauiAppCtrAppInsights in the MvvmExample folder is a .NET MAUI App, written in .NET 8 taking the standard template, modifying it with the Model-View-ViewModel (MVVM) Pattern, and logging to Azure Application Insights and App Center. Additionally crash data will be sent to App Center when the app is run without debugging.
+
+MauiAppCenterCodeBehind in the CodeBehindExample folder uses the standard template for .NET MAUI as is and logs events and crashes to App Center. This is a simpler example and is not aligned with current guidance. It remains here as an example of how to include App Center in .NET MAUI, which does take some care to compile and work properly.
 
 ## References
 https://vladislavantonyuk.github.io/articles/Adding-Application-Insights-to-.NET-MAUI-Application/
 https://learn.microsoft.com/en-us/azure/azure-monitor/app/worker-service 
+https://www.andreasnesheim.no/using-app-center-diagnostics-analytics-with-net-maui/ 
 
 ## Mobile App (MauiAppCenter)
 This is based on the Visual Studio .NET MAUI standard template with the code-behind pattern. It is a simple app with a 
@@ -16,7 +19,7 @@ This is based on the Visual Studio .NET MAUI modified to us the MVVM pattern.
 # Getting Started
 ## Mobile App
  - How to contribute to the App
-    - Cloning the repository using git clone "https://AzMobileDevOps@dev.azure.com/AzMobileDevOps/ProcessTransformation/_git/AppInsightsPoC"
+    - Cloning the repository using git clone "https://AzMobileDevOps@dev.azure.com/AzMobileDevOps/ProcessTransformation/_git/MauiAppCenter"
     - Create a new branch. Branch name should be the card number for which you are amending the code changes with prefix as [U/T/B], U refers to User story, T refers to Task, B refers to Bug. For example: If you are working on User story 163 then branch name should be U0163-[XYZ Details]
  - Software dependencies
     - Visual Studio 2022
