@@ -4,9 +4,9 @@ MauiAppCtrAppInsights in the MvvmExample folder is a .NET MAUI App, written in .
 MauiAppCenterCodeBehind in the CodeBehindExample folder uses the standard template for .NET MAUI as is and logs events and crashes to App Center. This is a simpler example and is not aligned with current guidance. It remains here as an example of how to include App Center in .NET MAUI, which does take some care to compile and work properly.
 
 ## References
-https://vladislavantonyuk.github.io/articles/Adding-Application-Insights-to-.NET-MAUI-Application/
-https://learn.microsoft.com/en-us/azure/azure-monitor/app/worker-service 
-https://www.andreasnesheim.no/using-app-center-diagnostics-analytics-with-net-maui/ 
+ - https://vladislavantonyuk.github.io/articles/Adding-Application-Insights-to-.NET-MAUI-Application/
+ - https://learn.microsoft.com/en-us/azure/azure-monitor/app/worker-service 
+ - https://www.andreasnesheim.no/using-app-center-diagnostics-analytics-with-net-maui/ 
 
 ## Mobile App (MauiAppCenter)
 This is based on the Visual Studio .NET MAUI standard template with the code-behind pattern. It is a simple app with a 
