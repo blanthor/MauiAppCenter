@@ -69,8 +69,4 @@ This is based on the Visual Studio .NET MAUI modified to us the MVVM pattern.
     - Android Targets (other targets may be used depending on your configuration)
         - Target Android Framework  as Android 13.0 (API Level 33)
         - Minimum Target Android Framework as Android 11.0 (API Level 30)
- 
-# How to Contribute
-1. Get Azure repo access by dropping mail to vinay.karnakanti@techwave.net, Subject : AIT MSS Site Survey mobile code repository access.
-1. Raise PR. Once code is reviewed and PR is approved, complete the PR.
-1. Delete the work branch and mark respective work item as completed.
+
